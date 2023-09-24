@@ -40,13 +40,13 @@ Resources:
               - Effect: Allow
                 Action:
                   - "ssm:StartSession"
-                Resource: "arn:aws:ec2:us-east-1:201431995425:instance/04cb4ca688797756f"
+                Resource: "arn:aws:ec2:us-east-1:796159111623:instance/04cb4ca688797756f"
 
   MyEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: t2.micro
-      ImageId: ami-00c6177f250e07ec1
+      ImageId: ami-04cb4ca688797756f
       IamInstanceProfile: !Ref MyEC2InstanceProfile
 
 Outputs:
